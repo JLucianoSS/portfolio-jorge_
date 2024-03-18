@@ -1,16 +1,18 @@
+
 import { FaProjectDiagram, FaWordpress } from "react-icons/fa";
 import { IoFastFood } from "react-icons/io5";
-import { Studies } from ".";
+import { Studies } from "../components";
 
-export const Experience = () => {
+
+const ExperiencePage = () => {
   return (
     <div
       id="experience"
-      className="bg-orange-200D h-auto flex flex-col justify-center items-center py-32 px-6 md:px-20 md:gap-7
+      className="bg-orange-200D h-auto flex flex-col justify-center items-center py-10 pb-20 px-6 md:px-20 md:gap-7
       lg:px-40  
       xl:px-60 ">
       <div className="flex flex-col items-center justify-center mb-14">
-        <span className="text-xl font-bold text-orange-500 mb-3">
+        <span className="text-xl font-bold text-[#BD34FE] mb-3">
           Experiencia
         </span>
         <h1 className="text-4xl font-semibold mb-6">Mi travesía </h1>
@@ -29,7 +31,7 @@ export const Experience = () => {
         <div className="">
           <div className="flex justify-between">
             <div className="">
-              <span className="text-orange-500 text-sm font-bold">2020 - 2023</span>
+              <span className="text-[#BD34FE] text-sm font-bold">2020 - 2023</span>
               <h1 className="text-2xl font-bold mt-1 mb-2">WordPress</h1>
             </div>
             <FaWordpress size={50} />
@@ -48,7 +50,7 @@ export const Experience = () => {
         <div className="">
           <div className="flex justify-between">
             <div className="">
-              <span className="text-orange-500 text-sm font-bold">Jun - 30 Oct / 2023</span>
+              <span className="text-[#BD34FE] text-sm font-bold">Jun - 30 Oct / 2023</span>
               <h1 className="text-2xl font-bold mt-1 mb-2">Proyectos</h1>
             </div>
             <FaProjectDiagram size={50}/>
@@ -67,7 +69,7 @@ export const Experience = () => {
         <div className="">
           <div className="flex justify-between">
             <div className="">
-              <span className="text-orange-500 text-sm font-bold">11 Nov - 15 Dic / 2023</span>
+              <span className="text-[#BD34FE] text-sm font-bold">11 Nov - 15 Dic / 2023</span>
               <h1 className="text-2xl font-bold mt-1 mb-2">Food Express</h1>
             </div>
             <IoFastFood size={50} />
@@ -86,3 +88,6 @@ export const Experience = () => {
     </div>
   );
 };
+
+
+export default ExperiencePage

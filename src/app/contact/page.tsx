@@ -2,11 +2,11 @@
 
 import { Form, MoreInfo } from "../components";
 
-export const Contact = () => {
+const ContactPage = () => {
   return (
     <div
       id="contact"
-      className=" bg-orange-400D flex flex-col justify-center items-center py-20 px-6 md:px-20
+      className=" bg-orange-400D flex flex-col justify-center items-center py-10 px-6 md:px-20
       lg:px-40  
       xl:px-60 "
     >
@@ -24,3 +24,6 @@ export const Contact = () => {
     </div>
   );
 };
+
+
+export default ContactPage;

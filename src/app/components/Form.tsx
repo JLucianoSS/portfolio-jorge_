@@ -47,8 +47,8 @@ export const Form: React.FC = () => {
     <>
       <div className="bg-gray-100D flex flex-col items-center  w-full p-10 xl:w-1/2">
 
-        <span className="text-orange-500 text-xl font-bold mb-3">Contacto</span>
-        <h1 className="text-gray-600 text-4xl font-semibold mb-8">Enviame un mensaje</h1>
+        <span className="text-[#BD34FE] text-xl font-bold mb-3">Contacto</span>
+        <h1 className="text-gray-600 text-4xl font-semibold mb-8">Envíame un mensaje</h1>
         
         <form ref={form} onSubmit={handleSubmit} className="w-full max-w-md">
           <input

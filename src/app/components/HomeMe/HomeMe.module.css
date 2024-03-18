@@ -1,0 +1,20 @@
+.containerProfile{
+    /* Imagen de fondo */
+    background-image: url('/images/portada.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+
+    /* Degradado superpuesto */
+    position: relative; /* Para posicionar correctamente el degradado */
+}
+
+.containerProfile::before {
+    content: ''; /* Añade un pseudo-elemento antes del contenido */
+    position: absolute; /* Lo coloca encima de la imagen de fondo */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), #BD34FE); /* Degradado negro a #BD34FE */
+}

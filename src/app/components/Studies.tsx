@@ -2,7 +2,7 @@ export const Studies = () => {
   return (
     <>
       <div className="py-5 w-full flex flex-col justify-center  mt-9">
-        <span className="text-xl font-bold text-orange-500 mb-3 text-center">
+        <span className="text-xl font-bold text-[#BD34FE] mb-3 text-center">
           Formación académica
         </span>
         <hr className="border-t-1 border-gray-400 mb-8 mt-8 md:mt-4" />

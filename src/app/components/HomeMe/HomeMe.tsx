@@ -38,9 +38,9 @@ export const HomeMe = () => {
             </div>
           </div>
           <div className="bg-green-500D space-x-5 md:flex">
-            <button className="text-white font-bold py-2 px-4 text-sm rounded-full border border-white transition-all duration-300 ease-in-out">
-              Descargar CV
-            </button>
+            <a href="/jorge-cv.pdf" target="_blank" className="text-white font-bold py-2 px-4 text-sm rounded-full border border-white transition-all duration-300 ease-in-out">
+              <button>Descargar CV</button>
+            </a>
             <Link className="md:hidden" href="#about">
               <button className="bg-white hover:bg-white hover:text-black text-gray-600 text-sm font-bold py-2 px-4 rounded-full transition-all duration-300 ease-in-out">
                 Sobre mí

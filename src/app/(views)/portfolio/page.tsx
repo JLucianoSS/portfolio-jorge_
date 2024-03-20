@@ -1,6 +1,7 @@
 'use client';
 import { ButtonMenu } from "@/app/components";
 import useDarModeStore from "@/app/store/switchStore";
+import { FiYoutube } from "react-icons/fi";
 
 
 const PortfolioPage = () => {
@@ -13,7 +14,7 @@ const PortfolioPage = () => {
       >
        <div className="bg-orange-300D flex flex-col justify-center items-center gap-10 
         md:w-full md:pb-20 md:gap-15 md:flex md:overflow-y-auto md:h-full 
-        xl:pt-[14rem]">
+        xl:pt-[12rem]">
          <div className="flex flex-col items-center justify-center mb-14 md:mb-8 md:pt-[31rem] xl:pt-0">
             <span className="text-xl text-[#BD34FE] font-bold mb-3">Portafolio</span>
             <h1 className={`${ isDarkMode ? 'text-white' : 'text-gray-700' } text-4xl font-semibold mb-6`}>Mis proyectos</h1>
@@ -35,9 +36,9 @@ const PortfolioPage = () => {
                 <p className="text-sm text-gray-400 mb-4 w-3/4 md:w-1/2">
                   <b>Tecnoligías usadas:</b> React, Redux-toolkit, Sass, Bootstrap, Node.js, Express, y PostgreSQL
                  </p>
-                <button className="bg-orange-500 text-white font-bold py-2 px-4 rounded transition-all duration-300 ease-in-out">
+                <a href="https://pokemon-app-jorge.vercel.app" target="_blank" className="bg-orange-500 text-white font-bold py-2 px-4 rounded transition-all duration-300 ease-in-out">
                   Ver Proyecto
-                </button>
+                </a>
               </div>
             </div>
             {/* Tarjeta 2 - derecha*/}
@@ -49,14 +50,16 @@ const PortfolioPage = () => {
                 }}
               ></div>
               <div className="relative z-10 text-white flex flex-col justify-center items-end w-full">
-                <h2 className="text-sm text-red-500 font-bold mb-2">Youtube</h2>
+                <a href="https://www.youtube.com/watch?v=ME_E3ZCshj0&t=27s"  target="_blank" className=" bg-red-500 px-3 py-2 text-sm text-white font-bold mb-2 rounded-xl"><FiYoutube size={25}/></a>
                 <h1 className="text-lg font-bold mb-2">Food Express App</h1>
                 <p className="text-white text-sm mb-4 w-3/4 text-end md:w-1/2">
                   <b>Tecnoligías usadas:</b> React, Redux, Bootstrap, Node.js, Express y PostgreSQL
                 </p>
-                <button className="bg-gray-800 text-white font-bold py-2 px-4 rounded transition-all duration-300 ease-in-out">
+                <a href="https://foodexpress-alpha.vercel.app" target="_blank" 
+                  className="bg-gray-800 text-white font-bold py-2 px-4 rounded transition-all duration-300 ease-in-out">
                   Ver Proyecto
-                </button>
+                </a>
+                
               </div>
             </div>
          

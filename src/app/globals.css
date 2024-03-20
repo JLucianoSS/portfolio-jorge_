@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+@media (max-width: 767px) {
+
+  .container-button-dark{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(51, 51, 51);
+  }
+  .container-button-light{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+  }
+
+}

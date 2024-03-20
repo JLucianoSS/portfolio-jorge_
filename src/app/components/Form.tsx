@@ -4,10 +4,11 @@ import { areThereErrors } from "../helpers";
 import { useRef } from "react";
 import { Toaster, toast } from "react-hot-toast";
 import emailjs from "@emailjs/browser";
-import styles from "./Form.module.css";
+import useDarModeStore from "../store/switchStore";
 
 export const Form: React.FC = () => {
   const form = useRef<HTMLFormElement | null>(null);
+  const isDarkMode = useDarModeStore((state) => state.isDarkMode);
 
   const { formState, onInputChange, onResetForm, errors } = useForm({
     nombre: "",
@@ -48,7 +49,7 @@ export const Form: React.FC = () => {
       <div className="bg-gray-100D flex flex-col items-center w-full p-10 xl:w-1/2 md:items-start ">
 
         <span className="text-[#BD34FE] text-xl font-bold mb-3">Contacto</span>
-        <h1 className="text-gray-600 text-2xl font-semibold mb-8">Envíame un mensaje</h1>
+        <h1 className={`${ isDarkMode ? 'text-white': 'text-gray-700' } text-2xl font-semibold mb-8`}>Envíame un mensaje</h1>
         
         <form ref={form} onSubmit={handleSubmit} className="w-full max-w-md">
           <input
@@ -59,7 +60,7 @@ export const Form: React.FC = () => {
             onChange={onInputChange}
             className="w-full py-2 px-4 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
           />
-          {errors.nombre && <p className="text-gray-600 text-sm">{errors.nombre}</p>}
+          {errors.nombre && <p className="text-red-600 text-sm">{errors.nombre}</p>}
           <input
             type="email"
             placeholder="Correo"
@@ -68,7 +69,7 @@ export const Form: React.FC = () => {
             onChange={onInputChange}
             className="w-full py-2 px-4 mt-5 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
           />
-          {errors.correo && <p className="text-gray-600 text-sm">{errors.correo}</p>}
+          {errors.correo && <p className="text-red-600 text-sm">{errors.correo}</p>}
           <input
             type="text"
             placeholder="Asunto"
@@ -77,7 +78,7 @@ export const Form: React.FC = () => {
             onChange={onInputChange}
             className="w-full py-2 px-4 mt-5 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
           />
-          {errors.asunto && <p className="text-gray-600 text-sm">{errors.asunto}</p>}
+          {errors.asunto && <p className="text-red-600 text-sm">{errors.asunto}</p>}
           <textarea
             placeholder="Mensaje"
             name="mensaje"
@@ -85,7 +86,7 @@ export const Form: React.FC = () => {
             onChange={onInputChange}
             className="w-full py-8 px-4 mt-5 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
           />
-          {errors.mensaje && <p className="text-gray-600 text-sm">{errors.mensaje}</p>}
+          {errors.mensaje && <p className="text-red-600 text-sm">{errors.mensaje}</p>}
           <button
             type="submit"
             disabled={!areThereErrors(errors)}

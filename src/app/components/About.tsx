@@ -1,5 +1,7 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
+import useDarModeStore from "../store/switchStore";
 
 const icons: String[] = [
   "html.png",
@@ -16,16 +18,17 @@ const icons: String[] = [
   "posgres.png",
 ];
 
-
-
 export const About = () => {
+
+  const isDarkMode  = useDarModeStore((state) => state.isDarkMode);
+
   return (
     <div
       id="about"
-      className="bg-white  py-10 px-6
+      className={`${ isDarkMode ? 'bg-darkModePrimary' : 'bg-[#f0f0f0]' } py-10 px-6
         md:w-[70%] md:rounded-tr-3xl md:rounded-br-3xl
       
-      "
+      `}
     >
 
       <div 
@@ -38,8 +41,8 @@ export const About = () => {
         {/* SOBRE MI */}
         <div className="md:w-full xl:w-1/2">
           <h1 className="text-[#BD34FE] text-lg font-bold mb-4 md:pt-[6rem] xl:pt-0">Acerca de mí</h1>
-          <h2 className="text-xl font-bold mb-4">Soy Desarrollador</h2>
-          <p className="text-gray-700 mb-4 text-justify text-sm">
+          <h2 className={`${ isDarkMode ? 'text-white' : 'text-gray-700' } text-xl font-bold mb-4`}>Soy Desarrollador</h2>
+          <p className={`${ isDarkMode ? 'text-white' : 'text-gray-700' } mb-4 text-justify text-sm`}>
             Cuento con experiencia en desarrollo web, WordPress y tecnologías
             modernas, con participación clave en la creación exitosa de un sistema
             llamado
@@ -47,7 +50,7 @@ export const About = () => {
             buscando ampliar habilidades hacia el desarrollo móvil y aportar a
             equipos innovadores.
           </p>
-          <p className="text-gray-700 text-sm">
+          <p className={`${ isDarkMode ? 'text-white': 'text-gray-700' } text-sm`}>
             Echa un vistazo a mi portafolio para conocer más sobre mis proyectos.
           </p>
           <Link href="/portfolio">

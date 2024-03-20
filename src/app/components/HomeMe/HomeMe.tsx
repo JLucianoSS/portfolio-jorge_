@@ -1,17 +1,11 @@
 'use client';
 import Image from "next/image"
 import styles from './HomeMe.module.css';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-// import styled from 'styled-components';
+import { FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+
 import Link from "next/link";
 
 export const HomeMe = () => {
-
-//   const HomeMeContainer = styled.div`
-//   @media (max-width: 768px) {
-//     display: none;
-//   }
-// `;
 
   return (
 
@@ -30,7 +24,14 @@ export const HomeMe = () => {
             <span className="text-sm font-bold text-white md:text-base">Hola soy</span>
             <h1 className="text-xl font-bold mb-3 mt-1 text-white md:text-xl xl:text-3xl">Jorge Luciano</h1>
             <h5 className="text-base font-bold mb-3 text-white md:text-sm xl:text-lg">Desarrollador Full Stack </h5>
-            <p className="mb-5 text-center text-white text-xs md:text-xs xl:text-sm">Bachiller en Ing. Informática con soluciones innovadoras y eficaces</p>
+            <p className="mb-2 text-center flex gap-3 text-white text-xs md:text-xs xl:text-xs">
+              <FaPhoneAlt />
+              +51916325058
+            </p>
+            <p className="mb-5 text-center flex gap-3 text-white text-xs md:text-xs xl:text-xs">
+              <FaMapMarkerAlt />
+              Lima, Perú
+            </p>
             <div className="flex space-x-3">
               <FaGithub color="white" size={40}  />
               <FaLinkedin color="white" size={40} />

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Footer, Navbar } from "./components";
+import { ButtonDarkMode, Footer, Navbar } from "./components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +22,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
             {children}
           </div>
           <Navbar/>
+
           <Footer/>
         </div>
         

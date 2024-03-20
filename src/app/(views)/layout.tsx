@@ -20,6 +20,7 @@ export default function PortfolioLayout({ children }: { children: React.ReactNod
 
   return (
     <div className='md:bg-green-500 relative md:w-[85%] md:h-[90vh] md:flex md:rounded-3xl'>
+     
 
       {
         isMobile 

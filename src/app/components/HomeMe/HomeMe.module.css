@@ -18,3 +18,10 @@
     left: 0;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), #BD34FE); /* Degradado negro a #BD34FE */
 }
+
+@media (min-width: 768px) {
+    .containerProfile::before {
+        border-bottom-left-radius: 24px;
+        border-top-left-radius: 24px;
+    }
+}

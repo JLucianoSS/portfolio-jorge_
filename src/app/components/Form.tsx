@@ -45,10 +45,10 @@ export const Form: React.FC = () => {
 
   return (
     <>
-      <div className="bg-gray-100D flex flex-col items-center  w-full p-10 xl:w-1/2">
+      <div className="bg-gray-100D flex flex-col items-center w-full p-10 xl:w-1/2 md:items-start ">
 
         <span className="text-[#BD34FE] text-xl font-bold mb-3">Contacto</span>
-        <h1 className="text-gray-600 text-4xl font-semibold mb-8">Envíame un mensaje</h1>
+        <h1 className="text-gray-600 text-2xl font-semibold mb-8">Envíame un mensaje</h1>
         
         <form ref={form} onSubmit={handleSubmit} className="w-full max-w-md">
           <input
@@ -89,10 +89,10 @@ export const Form: React.FC = () => {
           <button
             type="submit"
             disabled={!areThereErrors(errors)}
-            className={`w-full py-2 px-4 rounded-md mt-5 ${
+            className={`w-full py-2 px-4 rounded-md mt-5 text-white ${
               !areThereErrors(errors)
-                ? "bg-gray-300 cursor-not-allowed"
-                : "bg-orange-500 text-gray-600"
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-purple-500 text-gray-500"
             }`}
           >
             Enviar

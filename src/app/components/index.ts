@@ -7,3 +7,6 @@ export * from './Footer';
 export * from './HomeMe/HomeMe';
 export * from './About';
 export * from './Studies';
+export * from './OffCanvas';
+export * from './ButtonMenu';
+export * from './ButtonDarkMode';

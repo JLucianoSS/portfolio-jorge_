@@ -4,16 +4,18 @@ export const MoreInfo = () => {
     return (
       <div className="bg-gray-100D p-10 flex flex-col xl:w-1/2 rounded-b-xl">
 
-        <div className="flex flex-col gap-5 lg:flex-row  md:justify-between w-full">
+        <div className="flex flex-col gap-5 lg:flex-col  md:justify-between w-full">
 
-          <div className="container  md:mb-0 bg-white rounded-lg p-4">
+          <div className="container  md:mb-0 bg-white rounded-lg p-4"
+          style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
             <div className="mb-2 ">
               <strong className="text-gray-600">Email:</strong>
             </div>
             <span className=" text-sm font-semibold text-gray-600">jorgelss912345@gmail.com</span>
           </div>
 
-          <div className="container bg-white rounded-lg p-4">
+          <div className="container bg-white rounded-lg p-4"
+          style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
             <div className="mb-2">
               <strong className="text-gray-600">Teléfono:</strong>
             </div>

@@ -9,10 +9,10 @@ export const Studies = () => {
 
         <div 
           className="bg-slate-500D flex flex-col gap-5 w-full  
-          md:  md:flex-row md:gap-7 
+          xl:flex-row xl:gap-7 
         "
         >
-          <div className="md:w-1/2 flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+          <div className="xl:w-1/2 flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
             <div className="p-1 mr-4 text-whi bg-white rounded-full dark:text-orange-100 ">
               <img className="w-10 h-10" src="/icons/unp.png" alt="unp" />
             </div>
@@ -26,7 +26,7 @@ export const Studies = () => {
             </div>
           </div>
 
-          <div className="md:w-1/2 flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+          <div className="xl:w-1/2 flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
             <div className="p-1 mr-4  ">
               <img className="w-10 h-10" src="/icons/henry.png" alt="unp" />
             </div>

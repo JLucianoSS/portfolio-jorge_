@@ -33,7 +33,7 @@ const PortfolioPage = () => {
             {/* Tarjeta 1 - izquierda*/}
             <div className="relative overflow-hidden bg-white w-full py-20 px-8 rounded-3xl shadow-lg md:px-14">
               <div className="absolute inset-0">
-                <Image src="/icons/pi.png" layout="fill" objectFit="cover" alt="pi"/>
+                <Image className="object-cover" src="/icons/pi.png" fill={true} sizes="(max-width: 768px) 100vw, 33vw" alt="pi"/>
               </div>
               <div className="relative z-0 text-white">
                 <h2 className="text-sm text-red-500 font-bold mb-2">Youtube</h2>
@@ -49,7 +49,7 @@ const PortfolioPage = () => {
             {/* Tarjeta 2 - derecha*/}
             <div className="relative overflow-hidden bg-white w-full py-20 px-8 rounded-3xl shadow-lg md:px-14">
               <div className="absolute inset-0">
-                <Image src="/icons/fe.png" layout="fill" objectFit="cover" alt="pf"/>
+                <Image className="object-cover" src="/icons/fe.png" fill={true} sizes="(max-width: 768px) 100vw, 33vw"  alt="pf"/>
               </div>
               <div className="relative z-0 text-white flex flex-col justify-center items-end w-full">
                 <a href="https://www.youtube.com/watch?v=ME_E3ZCshj0&t=27s"  target="_blank" className=" bg-red-500 px-3 py-2 text-sm text-white font-bold mb-2 rounded-xl"><FiYoutube size={25}/></a>

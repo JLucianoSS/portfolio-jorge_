@@ -4,11 +4,16 @@ import { FaProjectDiagram, FaWordpress } from "react-icons/fa";
 import { IoFastFood } from "react-icons/io5";
 import { ButtonMenu, Studies } from "../../components";
 import useDarModeStore from "@/app/store/switchStore";
+import { useEffect } from "react";
 
 
 const ExperiencePage = () => {
 
   const isDarkMode = useDarModeStore((state) => state.isDarkMode);
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div

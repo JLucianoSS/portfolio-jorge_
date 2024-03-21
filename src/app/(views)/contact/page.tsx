@@ -2,10 +2,15 @@
 'use client';
 import useDarModeStore from "@/app/store/switchStore";
 import { ButtonMenu, Form, MoreInfo } from "../../components";
+import { useEffect } from "react";
 
 const ContactPage = () => {
 
   const isDarkMode = useDarModeStore((state) => state.isDarkMode);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div

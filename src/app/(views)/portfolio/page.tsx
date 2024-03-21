@@ -33,7 +33,7 @@ const PortfolioPage = () => {
             {/* Tarjeta 1 - izquierda*/}
             <div className="relative overflow-hidden bg-white w-full py-20 px-8 rounded-3xl shadow-lg md:px-14">
               <div className="absolute inset-0">
-                <Image src="/icons/pi.png" layout="fill" objectFit="cover" alt="pi"/>
+                <Image src="/icons/pi.png" layout="fill" objectFit="cover" alt="pi" width={500}/>
               </div>
               <div className="relative z-10 text-white">
                 <h2 className="text-sm text-red-500 font-bold mb-2">Youtube</h2>

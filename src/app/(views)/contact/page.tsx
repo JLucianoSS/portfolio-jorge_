@@ -23,9 +23,9 @@ const ContactPage = () => {
 
       {/* CONTENIDO CONTACTO */}
       <div 
-        className={`${ isDarkMode ? 'bg-darkModePrimary' : 'bg-[#f0f0f0]' } flex flex-col justify-center items-center w-full rounded-3xl 
-        md:pt-[30rem] md:overflow-y-auto 
-        xl:flex-row xl:pt-0
+        className={`${ isDarkMode ? 'bg-darkModePrimary' : 'bg-[#f0f0f0]' } flex flex-col  w-full rounded-3xl
+        md:overflow-y-auto 
+        xl:flex-row
         `}
         
       >

@@ -7,7 +7,7 @@ export const ButtonMenu = () => {
   const [isOffcanvas1Open, setIsOffcanvas1Open] = useState<boolean>(false);
 
   return (
-    <div className="fixed top-0 right-0 bg-purple-500 rounded-2xl w-12 flex items-center justify-end mr-2 mt-2 md:hidden">
+    <div className="fixed top-0 right-0 bg-purple-500 rounded-2xl w-12 flex items-center justify-end mr-2 mt-2 md:hidden z-50">
       {/* Boton para abrir el offcanvas */}
       <button
         onClick={() => setIsOffcanvas1Open(true)}

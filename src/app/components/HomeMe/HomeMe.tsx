@@ -13,7 +13,7 @@ export const HomeMe = () => {
         className={`${styles.containerProfile} h-[95vh] bg-orange-500D flex flex-col-reverse justify-center items-center gap-y-7 px-6
         md:px-10 md:h-full  md:w-[30%] md:rounded-tl-3xl md:rounded-bl-3xl`}
       >
-        <span className=" hidden md:inline-block md:relative md:text-xs md:text-gray-200">© 2024 Jorge Luciano</span>
+        <span className=" hidden md:inline-block md:relative md:text-xs md:text-gray-200">© 2025 Jorge Luciano</span>
         <div className="bg-red-500D flex flex-col justify-center items-center
           relative "
         >
@@ -49,10 +49,10 @@ export const HomeMe = () => {
           </div>
         </div>
         {/* COntenedor relativo */}
-        <div className="bg-whiteD relative">
+        <div className="bg-whiteD relative flex justify-center w-full">
           <Image
-              className="relative w-[10rem] h-[10rem] rounded-full border-4 border-solid border-white object-cover
-              md:w-[12rem] md:h-[12rem]
+              className="relative w-[60%] rounded-full border-4 border-solid border-white object-cover
+              
               "
               src="/icons/jorge.jpeg"
               alt="mi-foto"

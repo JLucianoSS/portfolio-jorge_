@@ -10,3 +10,4 @@ export * from './Studies';
 export * from './OffCanvas';
 export * from './ButtonMenu';
 export * from './ButtonDarkMode';
+export * from './CardProject';

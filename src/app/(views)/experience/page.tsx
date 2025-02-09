@@ -21,9 +21,8 @@ const ExperiencePage = () => {
       className={` ${ isDarkMode ? 'bg-darkModePrimary' : 'bg-[#f0f0f0]' } py-10 px-6 flex justify-center items-center
       md:w-[70%] md:rounded-tr-3xl md:rounded-br-3xl`}
     >
-      <div className="bg-orange-300D flex flex-col justify-center items-center gap-10 
-        md:w-full md:pb-20 md:gap-15 md:flex md:overflow-y-auto md:h-full md:px-12 
-        xl:pt-[25rem]">
+      <div className="bg-orange-300D flex flex-col gap-10 
+        md:w-full md:pb-20 md:gap-15 md:flex md:overflow-y-auto md:h-full md:px-12">
         <div className="flex flex-col items-center justify-center mb-14 md:mb-8 md:mt-[50rem] xl:mt-0">
           <span className="text-xl font-bold text-[#BD34FE] mb-3">
             Experiencia

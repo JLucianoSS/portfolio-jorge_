@@ -33,8 +33,12 @@ export const HomeMe = () => {
               Lima, Perú
             </p>
             <div className="flex space-x-3">
-              <FaGithub color="white" size={40}  />
-              <FaLinkedin color="white" size={40} />
+              <a href="https://github.com/JLucianoSS" target="_blank">
+                <FaGithub color="white" size={40}  />
+              </a>
+              <a href="https://www.linkedin.com/in/jorge-sanchez-sarango" target="_blank">
+                <FaLinkedin color="white" size={40} />
+              </a>
             </div>
           </div>
           <div className="bg-green-500D space-x-5 md:flex">

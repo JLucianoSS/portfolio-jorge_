@@ -43,12 +43,8 @@ export const About = () => {
           <h1 className="text-[#BD34FE] text-lg font-bold mb-4 md:pt-[6rem] xl:pt-0">Acerca de mí</h1>
           <h2 className={`${ isDarkMode ? 'text-white' : 'text-gray-700' } text-xl font-bold mb-4`}>Soy Desarrollador</h2>
           <p className={`${ isDarkMode ? 'text-white' : 'text-gray-700' } mb-4 text-justify text-sm`}>
-            Cuento con experiencia en desarrollo web, WordPress y tecnologías
-            modernas, con participación clave en la creación exitosa de un sistema
-            llamado
-            <span className="text-[#BD34FE] font-bold"> Food Express</span>,
-            buscando ampliar habilidades hacia el desarrollo móvil y aportar a
-            equipos innovadores.
+            Cuento con experiencia en desarrollo web, WordPress y tecnologías modernas. Actualmente, desarrollo soluciones en
+            <span className="text-[#BD34FE] font-bold"> Aura digital</span>, donde he colaborado en la creación de plataformas educativas, sistemas de reservas e integraciones de APIs. Mi objetivo es seguir ampliando mis habilidades en desarrollo móvil y aportar a equipos innovadores.
           </p>
           <p className={`${ isDarkMode ? 'text-white': 'text-gray-700' } text-sm`}>
             Echa un vistazo a mi portafolio para conocer más sobre mis proyectos.

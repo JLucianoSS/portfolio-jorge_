@@ -43,17 +43,14 @@ const ExperiencePage = () => {
           <div className="">
             <div className="flex justify-between">
               <div className="">
-                <span className="text-[#BD34FE] text-sm font-bold">2020 - 2023</span>
+                {/* <span className="text-[#BD34FE] text-sm font-bold">2020 - 2023</span> */}
                 <h1 className={`${ isDarkMode ? 'text-white' : 'text-gray-700' } text-2xl font-bold mt-1 mb-2`}>WordPress</h1>
               </div>
               <FaWordpress className={`${ isDarkMode ? 'text-white' : 'text-gray-700' }`} size={50} />
             </div>
             <hr className="border-t-1 border-gray-400 mb-8 mt-8" />
             <p className={`${ isDarkMode ? 'text-white' : 'text-gray-700' } text-gray-600 text-sm text-justify`}>
-              He creado tiendas onlines para ayudar a negocios pequeños a
-              automatizar las ventas. Asi como también he realizado soporte
-              técnico a webs de clientes, resuelto problemas
-              y he hallado soluciones con pluguins y código.
+              He desarrollado tiendas online para automatizar las ventas de pequeños negocios, brindando soporte técnico, resolviendo problemas con plugins y creando soluciones personalizadas con código para mejorar la funcionalidad.
             </p>
         
           </div>
@@ -62,16 +59,13 @@ const ExperiencePage = () => {
             <div className="flex justify-between">
               <div className="">
                 <span className="text-[#BD34FE] text-sm font-bold">Jun - 30 Oct / 2023</span>
-                <h1 className={` ${ isDarkMode ? 'text-white' : 'text-gray-700' } text-2xl font-bold mt-1 mb-2`}>Proyectos</h1>
+                <h1 className={` ${ isDarkMode ? 'text-white' : 'text-gray-700' } text-2xl font-bold mt-1 mb-2`}>Food Express</h1>
               </div>
               <FaProjectDiagram className={`${ isDarkMode ? 'text-white' : 'text-gray-700' }` } size={50}/>
             </div>
             <hr className="border-t-1 border-gray-400 mb-8 mt-8" />
             <p className={`${ isDarkMode ? 'text-white' : 'text-gray-700' } text-gray-600 text-sm text-justify`}>
-              Realicé una aplicación que muestra, filtra, busca detalles y crea su
-              propia lista personalizada de Pokémon. También hice una web para
-              buscar, filtrar, guardar personajes favoritos, esto usando la API de
-              Rick and Morty.
+              Participé en la creación de una plataforma para explorar menús, realizar pedidos personalizados y asegurar pagos seguros, optimizando la experiencia del cliente y las herramientas administrativas.
             </p>
         
           </div>
@@ -79,16 +73,14 @@ const ExperiencePage = () => {
           <div className="">
             <div className="flex justify-between">
               <div className="">
-                <span className="text-[#BD34FE] text-sm font-bold">11 Nov - 15 Dic / 2023</span>
-                <h1 className={` ${ isDarkMode ? 'text-white' : 'text-gray-700' } text-2xl font-bold mt-1 mb-2`}>Food Express</h1>
+                {/* <span className="text-[#BD34FE] text-sm font-bold">11 Nov - 15 Dic / 2023</span> */}
+                <h1 className={` ${ isDarkMode ? 'text-white' : 'text-gray-700' } text-2xl font-bold mt-1 mb-2`}>Aura Digital</h1>
               </div>
               <IoFastFood className={`${ isDarkMode ? 'text-white' : 'text-gray-700' }`} size={50} />
             </div>
             <hr className="border-t-1 border-gray-400 mb-8 mt-8" />
             <p className={`${ isDarkMode ? 'text-white' : 'text-gray-700' } text-gray-600 text-sm text-justify`}>
-              Participé en la creación de una plataforma para explorar menús,
-              hacer pedidos personalizados y asegurar pagos seguros, facilitando
-              la interacción del cliente y brindando herramientas administrativas.
+              Colaboré en el desarrollo de una plataforma de alquiler de autos y una plataforma educativa. Además, integré la API de WooCommerce para una aplicación móvil y construí la interfaz de una web para una exposición de arte moderno. También gestioné la publicación de la aplicación en Google Play y App Store.
             </p>
         
           </div>

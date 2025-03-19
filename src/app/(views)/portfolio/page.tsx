@@ -63,7 +63,7 @@ const PortfolioPage = () => {
             subtitle="Aura Digital"
             description="Gestión de reservas y autos"
             techs="React, NextJS, Tailwind, Node.js, y PostgreSQL. "
-            redirectPageUrl="https://pokemon-app-jorge.vercel.app"
+            redirectPageUrl="#"
             justifyContent="left"
           />
 

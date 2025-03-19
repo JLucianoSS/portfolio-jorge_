@@ -58,10 +58,10 @@ const ExperiencePage = () => {
           <div className="">
             <div className="flex justify-between">
               <div className="">
-                <span className="text-[#BD34FE] text-sm font-bold">Jun - 30 Oct / 2023</span>
+                {/* <span className="text-[#BD34FE] text-sm font-bold">Jun - 30 Oct / 2023</span> */}
                 <h1 className={` ${ isDarkMode ? 'text-white' : 'text-gray-700' } text-2xl font-bold mt-1 mb-2`}>Food Express</h1>
               </div>
-              <FaProjectDiagram className={`${ isDarkMode ? 'text-white' : 'text-gray-700' }` } size={50}/>
+              <IoFastFood className={`${ isDarkMode ? 'text-white' : 'text-gray-700' }`} size={50} />
             </div>
             <hr className="border-t-1 border-gray-400 mb-8 mt-8" />
             <p className={`${ isDarkMode ? 'text-white' : 'text-gray-700' } text-gray-600 text-sm text-justify`}>
@@ -76,7 +76,7 @@ const ExperiencePage = () => {
                 {/* <span className="text-[#BD34FE] text-sm font-bold">11 Nov - 15 Dic / 2023</span> */}
                 <h1 className={` ${ isDarkMode ? 'text-white' : 'text-gray-700' } text-2xl font-bold mt-1 mb-2`}>Aura Digital</h1>
               </div>
-              <IoFastFood className={`${ isDarkMode ? 'text-white' : 'text-gray-700' }`} size={50} />
+              <FaProjectDiagram className={`${ isDarkMode ? 'text-white' : 'text-gray-700' }` } size={50}/>
             </div>
             <hr className="border-t-1 border-gray-400 mb-8 mt-8" />
             <p className={`${ isDarkMode ? 'text-white' : 'text-gray-700' } text-gray-600 text-sm text-justify`}>

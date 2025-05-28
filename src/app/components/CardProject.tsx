@@ -20,7 +20,7 @@ export const CardProject = ({
   subtitle = "subtitulo",
   techs = "React, node, etc..",
   title = "Project Name",
-  youtubeLink = "youtube.com",
+  youtubeLink = "",
   description="description",
   justifyContent = 'right',
   classNameButton = 'bg-orange-400',
@@ -51,9 +51,9 @@ export const CardProject = ({
           justifyContent === 'right' ? 'items-start' : 'items-end'
         }`}
       >
-        <Link href={youtubeLink} target="_blank">
+        {youtubeLink ? <Link href={youtubeLink} target="_blank">
           <h2 className={`text-sm font-bold mb-2 ${colorSubtitle}`}>{subtitle}</h2>
-        </Link>
+        </Link> :<h2 className={`text-sm font-bold mb-2 ${colorSubtitle}`}>{subtitle}</h2>}
         <h1 className="text-lg font-semibold mb-2">{title}</h1>
         <div
           className={`text-sm text-gray-100 flex flex-col gap-2 mb-4 w-3/4 md:w-[65%] ${

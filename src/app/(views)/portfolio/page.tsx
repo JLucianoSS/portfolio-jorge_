@@ -63,17 +63,17 @@ const PortfolioPage = () => {
             subtitle="Aura Digital"
             description="Gestión de reservas y autos"
             techs="React, NextJS, Tailwind, Node.js, y PostgreSQL. "
-            redirectPageUrl="#"
+            redirectPageUrl="https://www.drivexgo.com"
             justifyContent="left"
           />
 
           <CardProject
-            imgUrl="/icons/pi.png"
-            title="Pokemon"
-            subtitle="Personal"
-            description="Interfaz, filtrado y creación"
-            techs="React, Redux-toolkit, Sass, Node.js, Express, y PostgreSQL. "
-            redirectPageUrl="https://pokemon-app-jorge.vercel.app"
+            imgUrl="/icons/dminor.png"
+            title="Deminor XXI"
+            subtitle="Aura Digital"
+            description="Cotización de proyectos"
+            techs="Astro, Js, Node"
+            redirectPageUrl="https://deminor.es"
           />
          
 
@@ -82,7 +82,6 @@ const PortfolioPage = () => {
             title="Food Express"
             subtitle="Ecommerce"
             description="Interfaz, filtrado y creación"
-            youtubeLink="Tienda para un restaurant"
             techs="React, Redux, Bootstrap, Node.js, Express y PostgreSQL. "
             redirectPageUrl="https://foodexpress-alpha.vercel.app"
             justifyContent="left"
